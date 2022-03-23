@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result - Conversion App</title>
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> -->
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <div class="content">
+        <div class="nav">
+            <a href="#" class="nav-button">About Us</a>
+            <a href="#" class="nav-button">Contact Us</a>
+            <a href="/" class="nav-button">Services</a>
+            <a href="#" class="nav-button">Team</a>
+        </div>
+        <div class="result-area">
+            <h2>Conversion successful!</h2>
+
+            <!-- If the weight conversion is selected, this code will be executed. -->
+            {% if conv_choice == '1' %}
+            <h3>{{ weight_pounds }} pounds = {{ weight_kg }} kilograms</h3>
+            {% endif %}
+
+            <!-- If the distance conversion is selected, this code will be executed. -->
+            {% if conv_choice == '2' %}
+            <h3>{{ distance_miles }} miles = {{ distance_km }} kilometers</h3>
+            {% endif %}
+
+            <!-- If the temperature conversion is selected, this code will be executed. -->
+            {% if conv_choice == '3' %}
+            <h3>{{ temperature_fahrenheit }} Fahrenheit = {{ temperature_celsius }} Celsius</h3>
+            {% endif %}
+        </div>
+    </div>
+</body>
+
+</html>

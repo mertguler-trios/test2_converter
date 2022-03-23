@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distance - Conversion App</title>
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> -->
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <div class="content">
+        <div class="nav">
+            <a href="#" class="nav-button">About Us</a>
+            <a href="#" class="nav-button">Contact Us</a>
+            <a href="/" class="nav-button">Services</a>
+            <a href="#" class="nav-button">Team</a>
+        </div>
+        <div class="input-area">
+            <h2>Enter the distance to be converted below.</h2>
+
+            <form action="/result" method="post">
+                <input type="text" name="distance-input" id="distance-input" class="text-input"
+                    placeholder="Enter distance in miles">
+                <input type="submit" value="Convert" class="submit-button">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

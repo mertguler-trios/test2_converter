@@ -1,0 +1,92 @@
+/* General declerations */
+
+body {
+    margin: 0;
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navigation buttons */
+
+a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    padding: 20px 0 20px 20px;
+    border: 3px solid red;
+    margin: auto;
+    width: 100%;
+    border-collapse: none;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+/* In order to remove collapsing borders */
+
+a + a {
+    border-left: none;
+}
+
+h2 {
+    margin: 50px auto 30px;
+}
+
+h3 {
+    color: green;
+}
+
+li {
+    margin: 20px auto;
+}
+
+.content {
+    width: 70%;
+    margin: 20px auto;
+}
+
+.text-input {
+    width: 100%;
+    border-radius: 5px;
+    height: 40px;
+    border: 1px solid black;
+    text-indent: 10px;
+}
+
+/* Submit button */
+
+.submit-button {
+    margin-top: 30px;
+    color: #fff;
+    background-color: rgb(25, 163, 7);
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.submit-button:hover {
+    background-color: rgb(47, 202, 27);;
+}
+
+.nav {
+    display: flex;
+}
+
+/* This is for responsiveness */
+
+@media only screen and (max-width: 1000px) {
+
+    .nav {
+      flex-direction: column;
+    }
+
+    h3 {
+        color: blue;
+    }
+
+    a + a {
+        border-top: none;
+        border-left: 3px solid red;;
+    }
+}
